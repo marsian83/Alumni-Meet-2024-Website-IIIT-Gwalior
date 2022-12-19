@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alumni Meet '23</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <div class="navbar container">
+      <div class="container navbar-branding" onclick="scrollToClass('head')">
+        Alumni Meet '22
+      </div>
+      <div class="navbar-items container">
+        <div class="navbar-item" onclick="scrollToClass('head')">
+          <i class="fa-solid fa-house"></i>Home
+        </div>
+        <div class="navbar-item" onclick="scrollToClass('timeline')">
+          <i class="fa-solid fa-timeline"></i>
+          Timeline
+        </div>
+        <div class="navbar-item" onclick="scrollToClass('about')">
+          <i class="fa-solid fa-circle-info"></i>About
+        </div>
+        <div class="navbar-item" onclick="scrollToClass('team')">
+          <i class="fa-solid fa-people-group"></i>Our Team
+        </div>
+        <div class="navbar-item" onclick="scrollToClass('contact-us')">
+          <i class="fa-regular fa-envelope"></i>
+          Contact us
+        </div>
+        <div
+          class="navbar-item"
+          id="navbar-item-register"
+          onclick="showFormModal()"
+        >
+          Register
+        </div>
+      </div>
+    </div>
+    <div class="head container">
+      <div class="head-top-space mobile-only"></div>
+      <div class="head-left container">
+        <!-- <img src="./assets/iiitm-logo.png" alt="iiitm-logo"> -->
+        <h4>ABV - IIITM</h4>
+        <h4>Alumni Meet 2023</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum modi
+          dignissimos reiciendis, et quos atque culpa excepturi corporis
+          sapiente expedita aspernatur ea nisi deleniti nostrum velit eaque. Quo
+          optio ad rem. Tempora, magnam ipsa.
+        </p>
+        <h6>15 - 16 December 2023</h6>
+        <button onclick="showFormModal()">Register now</button>
+      </div>
+      <div class="head-right container">
+        <div class="head-branding container">
+          <img
+            src="./assets/branding-handloop.png"
+            alt="brand-hands"
+            class="head-branding-part"
+            id="head-branding-part1"
+          />
+          <img
+            src="./assets/branding-decor-1.png"
+            alt="brand-decor1"
+            class="head-branding-part"
+            id="head-branding-part2"
+          />
+          <img
+            src="./assets/branding-decor-2.png"
+            alt="brand-decor2"
+            class="head-branding-part"
+            id="head-branding-part3"
+          />
+        </div>
+      </div>
+      <i
+        class="fa fa-chevron-down head-scroll-down"
+        id="head-scroll-down1"
+        aria-hidden="true"
+      ></i>
+      <i
+        class="fa fa-chevron-down head-scroll-down"
+        id="head-scroll-down2"
+        aria-hidden="true"
+      ></i>
+      <i
+        class="fa fa-chevron-down head-scroll-down"
+        id="head-scroll-down3"
+        aria-hidden="true"
+      ></i>
+      <p class="head-scroll-down-hint" onclick="scrollToClass('timeline')">
+        SCROLL DOWN
+      </p>
+    </div>
+    <div class="body container">
+      <div class="container timeline">
+        <p class="timeline-hint">Timeline of Events</p>
+        <div class="timeline-line"></div>
+        <div class="time-event time-event-left anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-regular fa-flag"></i>
+            </div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            quidem ipsa quos architecto numquam nostrum.
+          </div>
+        </div>
+        <div class="time-event time-event-right anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quas.
+            Alias aspernatur facilis ipsa! Cupiditate.
+          </div>
+        </div>
+        <div class="time-event time-event-left anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-regular fa-flag"></i>
+            </div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            quidem ipsa quos architecto numquam nostrum.
+          </div>
+        </div>
+        <div class="time-event time-event-right anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quas.
+            Alias aspernatur facilis ipsa! Cupiditate.
+          </div>
+        </div>
+        <div class="time-event time-event-left anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-regular fa-flag"></i>
+            </div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            quidem ipsa quos architecto numquam nostrum.
+          </div>
+        </div>
+        <div class="time-event time-event-right anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quas.
+            Alias aspernatur facilis ipsa! Cupiditate.
+          </div>
+        </div>
+        <div class="time-event time-event-left anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-regular fa-flag"></i>
+            </div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            quidem ipsa quos architecto numquam nostrum.
+          </div>
+        </div>
+        <div class="time-event time-event-right anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quas.
+            Alias aspernatur facilis ipsa! Cupiditate.
+          </div>
+        </div>
+        <div class="time-event time-event-left anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-regular fa-flag"></i>
+            </div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            quidem ipsa quos architecto numquam nostrum.
+          </div>
+        </div>
+        <div class="time-event time-event-right anim-hidden container">
+          <div class="time-event-bullet"></div>
+          <div class="time-event-time">Day 1 - 12:12</div>
+          <div class="time-event-joiner"></div>
+          <div class="time-event-card">
+            <div class="time-event-card-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quas.
+            Alias aspernatur facilis ipsa! Cupiditate.
+          </div>
+        </div>
+      </div>
+      <div class="container about">
+        <div class="about-hint">About</div>
+        <div class="container about-body">
+          <div class="container about-left">
+            <h4>Alumni Meet @ IIITM Gwalior</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+              molestiae eius beatae dolor, veritatis quis mollitia culpa ut
+              praesentium alias inventore voluptatum numquam repellendus quod ad
+              aspernatur ullam nulla molestias nostrum. Non consequatur ex, eum
+              soluta ipsa culpa minus sit libero voluptate sunt magnam animi
+              accusantium quidem molestiae tempora ipsam illo nesciunt id autem.
+              Facere eum optio tenetur eius beatae, neque recusandae officiis
+              eligendi quae? Distinctio tempore id assumenda? Maiores quo sunt
+              saepe. Iste inventore vitae fuga in maiores expedita asperiores
+              unde corrupti, quibusdam labore fugiat, mollitia harum. Cum
+              exercitationem ducimus modi eius repellendus impedit maxime quos
+              vero quaerat, aliquid veniam qui eum laborum suscipit sapiente
+              commodi expedita accusantium deleniti. Facilis voluptate
+              perferendis consectetur exercitationem odit a, iure velit cumque
+              debitis similique voluptates quibusdam possimus non suscipit
+              dignissimos dolorem autem neque magnam ut? Quod, reprehenderit
+            </p>
+            <button
+              class="about-iiitm-website"
+              onclick="
+              window.open('https:\/\/iiitm.ac.in', '_blank').focus();
+              "
+            >
+              Visit Institute Website
+            </button>
+          </div>
+          <div class="container about-right">
+            <img
+              src="https://qph.cf2.quoracdn.net/main-qimg-61e33658028cc179267efb633e9c503e-pjlq"
+              alt="iiitm"
+              class="about-iiitm-image"
+            />
+          </div>
+        </div>
+        <div class="objectives">
+          <div class="objectives-hint">Objectives</div>
+          <div class="objectives-body container">
+            <div class="objective-card anim-hidden">
+              <img
+                src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/37017/handshake-hands-clipart-xl.png"
+              />
+              <h5>Objective Type</h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                optio consectetur iste, quasi nisi ipsam sunt labore libero.
+                Culpa facilis, inventore veniam aliquid ullam soluta!
+              </p>
+            </div>
+            <div class="objective-card anim-hidden">
+              <img
+                src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/37017/handshake-hands-clipart-xl.png"
+              />
+              <h5>Objective Type</h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                optio consectetur iste, quasi nisi ipsam sunt labore libero.
+                Culpa facilis, inventore veniam aliquid ullam soluta!
+              </p>
+            </div>
+            <div class="objective-card anim-hidden">
+              <img
+                src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/37017/handshake-hands-clipart-xl.png"
+              />
+              <h5>Objective Type</h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                optio consectetur iste, quasi nisi ipsam sunt labore libero.
+                Culpa facilis, inventore veniam aliquid ullam soluta!
+              </p>
+            </div>
+            <div class="objective-card anim-hidden">
+              <img
+                src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/37017/handshake-hands-clipart-xl.png"
+              />
+              <h5>Objective Type</h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                optio consectetur iste, quasi nisi ipsam sunt labore libero.
+                Culpa facilis, inventore veniam aliquid ullam soluta!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container team">
+        <div class="team-hint">Team of Organizers</div>
+        <div class="team-body container">
+          <div class="team-member-card anim-hidden">
+            <img
+              src="https://www.iiitm.ac.in/images/demo/teachers/1650440085_Prof.-Sri-Niwas-Singh.jpg"
+            />
+            <h5>Prof S N Singh</h5>
+            <p>Patron</p>
+            <p>Director, ABV-IIITM</p>
+          </div>
+          <div class="team-member-card anim-hidden">
+            <img
+              src="https://www.iiitm.ac.in/images/demo/teachers/1669371320_anurag%20sir1.jpg"
+            />
+            <h5>Prof Anurag Shrivastava</h5>
+            <p>Program Advisor</p>
+            <p>Dean Alumini and External Relations</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-us">
+        <div class="contact-us-hint">Let's Get in Touch</div>
+        <div class="contact-us-body">
+          <div class="contact-us-left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7156.708765090627!2d78.16822557600752!3d26.250159506076507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c6e5d32a4d53%3A0xf834069adc0c9b89!2sAtal%20Bihari%20Vajpayee%20Indian%20Institute%20of%20Information%20Technology%20and%20Management%20Gwalior!5e0!3m2!1sen!2sjp!4v1671403702918!5m2!1sen!2sjp"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact-us-right">
+            <p>
+              Any questions? Feel free to reach out to us. Drop an email at any
+              of the following mails or call us at the given numbers.
+            </p>
+            <h6>Program Advisor Prof. Anurag Srivastava</h6>
+            <p>Dean of Alumni and External Relations, ABV-IIITM Gwalior</p>
+            <h6>Email: anurags@iiitm.ac.in | daer@iiitm.ac.in</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container footer-top">
+        <div class="footer-section">
+          <h5>Contact us</h5>
+          <p>ABV-IIITM</p>
+          <p>Gwalior, Madhya Pradesh</p>
+          <p>Phone: +91 1234567890</p>
+          <p>Email: info@abv-iiitm.edu</p>
+        </div>
+        <div class="footer-section">
+          <h5>Quick links</h5>
+          <ul>
+            <li onclick="scrollToClass('home')">Home</li>
+            <li onclick="scrollToClass('timeline')">Timeline</li>
+            <li onclick="scrollToClass('about')">About</li>
+            <li onclick="scrollToClass('team')">Team</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Follow us</h5>
+          <div class="footer-social-icons">
+            <a onclick="window.open('https:\/\/www.facebook.com/iiitm/')"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a onclick="window.open('https:\/\/www.twitter.com/iiitm')"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              onclick="window.open('https:\/\/www.instagram.com/iiitmgwaliorofficial')"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              onclick="window.open('https:\/\/www.linkedin.com/in/spandan-barve-b84172191/')"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container footer-bottom">
+        <p>Copyright &copy; 2023 ABV-IIITM Gwalior. All rights reserved.</p>
+      </div>
+    </footer>
+    <div class="modal hide" onclick="closeFormModal()">
+      <div class="modal-close-btn">X</div>
+      <div class="register-modal" onclick="closeFormModal()">
+        <div class="form-holder">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeVkBW3DWVHb06999nDShuTh3gD1bKK2FqJnNQnQVljXU-0Lg/viewform?usp=sf_link"
+            width="640"
+            height="720"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+        </div>
+        <p
+          onclick="let newwindow=window.open('https:\/\/docs.google.com/forms/d/e/1FAIpQLSeVkBW3DWVHb06999nDShuTh3gD1bKK2FqJnNQnQVljXU-0Lg/viewform?usp=sf_link','_new','height=720,width=640');
+          if (window.focus) {newwindow.focus()}"
+        >
+          Click here if the above form is not working for you
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
