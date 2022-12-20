@@ -358,6 +358,7 @@ body {
   font-size: 1.8rem;
   font-weight: 800;
   color: var(--text-primary);
+  translate: 0 -4vh;
 }
 
 .timeline-line {
@@ -413,7 +414,7 @@ body {
 
 .time-event-time {
   position: absolute;
-  top: 35.7%;
+  top: 5vw;
   font-size: 1.2rem;
   font-weight: 500;
   transition: 300ms;
