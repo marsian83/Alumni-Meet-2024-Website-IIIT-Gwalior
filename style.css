@@ -215,8 +215,8 @@ body {
 
 .landing-illustration {
   height: 20vh;
-  scale: 2;
-  translate: 0 6vh;
+  scale: 1.8;
+  translate: 0 5vh;
   justify-self: flex-end;
 }
 
