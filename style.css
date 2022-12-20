@@ -486,34 +486,44 @@ body {
 }
 
 .time-event:nth-of-type(2) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/audience.jpg") no-repeat center center fixed;
+  background-size: 150%;
 }
 .time-event:nth-of-type(3) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/beathoppers_dance.jpg") no-repeat center center fixed;
+  background-size: 100%;
 }
 .time-event:nth-of-type(4) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/socialising_event.jpg") no-repeat center center fixed;
+  background-size: 100%;
 }
 .time-event:nth-of-type(5) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/singing.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 .time-event:nth-of-type(6) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/ethnic_day.jpg") no-repeat center center fixed;
+  background-size: 100%;
 }
 .time-event:nth-of-type(7) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/bonfire.jpg") no-repeat center center fixed;
+  background-size: 100%;
 }
 .time-event:nth-of-type(8) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/sports.jpg") no-repeat center center fixed;
+  background-size: 100%;
 }
 .time-event:nth-of-type(9) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/food.jpg") no-repeat center center fixed;
+  background-size: 100%;
 }
 .time-event:nth-of-type(10) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/closingCeremony.jpg") no-repeat center center fixed;
+  background-size: 100%;
 }
 .time-event:nth-of-type(11) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/campus.jpg") no-repeat center center fixed;
+  background-size: 100%;
 }
 
 .time-event-left.anim-hidden .time-event-card {
