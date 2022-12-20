@@ -459,9 +459,13 @@ body {
 
 .time-event-card {
   display: flex;
+  justify-content: center;
+
   color: var(--text-primary);
   background-color: #ffffff;
   width: 30vw;
+  aspect-ratio: 20/9;
+  background-size: cover;
   box-shadow: 0px 0px 8px #00000055;
   border-radius: 1rem;
   padding: 2vh 2vw;
@@ -473,6 +477,17 @@ body {
 
 .time-event-card:hover {
   background-color: #feffef;
+}
+
+.time-event-card p {
+  position: absolute;
+  bottom: 0;
+  color: var(--text-secondary);
+  margin-bottom: 1vh;
+}
+
+#time-event-card1{
+  background: linear-gradient(to bottom, transparent, transparent, black), url("https://media.briantracy.com/blog/wp-content/uploads/2015/08/13090134/how-to-start-a-speech-audience1.jpg") no-repeat center center fixed;
 }
 
 .time-event-left.anim-hidden .time-event-card {
