@@ -495,15 +495,15 @@ body {
 }
 
 .time-event:nth-of-type(2) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/audience.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/auditorium.jpg") no-repeat center center fixed;
   background-size: 150%;
 }
 .time-event:nth-of-type(3) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/beathoppers_dance.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/aurora.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
 .time-event:nth-of-type(4) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/socialising_event.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/socialising.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
 .time-event:nth-of-type(5) .time-event-card{
@@ -515,7 +515,7 @@ body {
   background-size: 100%;
 }
 .time-event:nth-of-type(7) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/bonfire.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/djnight.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
 .time-event:nth-of-type(8) .time-event-card{
