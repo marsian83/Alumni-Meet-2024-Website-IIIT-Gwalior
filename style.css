@@ -160,7 +160,7 @@ body {
   align-items: center;
 }
 
-.head-left img {
+.head-left .landing-iiitm-logo {
   height: 8rem;
 }
 
@@ -199,6 +199,7 @@ body {
   opacity: 100%;
   cursor: pointer;
   transition: background-color 300ms ease, transform 200ms ease-out;
+  z-index: 2;
 }
 
 .head-left button:hover {
@@ -210,6 +211,13 @@ body {
   background-color: var(--secondary);
   transform: scale(0.9);
   transition: opacity 200ms ease, transform 100ms;
+}
+
+.landing-illustration {
+  height: 20vh;
+  scale: 2;
+  translate: 0 6vh;
+  justify-self: flex-end;
 }
 
 /* .events-slideshow {
@@ -358,6 +366,7 @@ body {
   font-size: 1.8rem;
   font-weight: 800;
   color: var(--text-primary);
+  translate: 0 -4vh;
 }
 
 .timeline-line {
@@ -413,7 +422,7 @@ body {
 
 .time-event-time {
   position: absolute;
-  top: 35.7%;
+  top: 5vw;
   font-size: 1.2rem;
   font-weight: 500;
   transition: 300ms;
@@ -633,10 +642,11 @@ body {
 }
 
 .about-left p {
-  padding: 0 2vw;
+  padding: 0 3vw;
   text-align: center;
   font-weight: 300;
   color: var(--text-primary);
+  margin-bottom: 2.5vh;
 }
 
 .about-iiitm-website {
