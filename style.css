@@ -815,6 +815,11 @@ body {
   height: 1px;
 }
 
+.widescreen-only.holderplace{
+  width: 15vw;
+  height: 1px;
+}
+
 .team-member-card {
   display: flex;
   flex-direction: column;
@@ -1296,6 +1301,10 @@ footer {
 
   .objective-card {
     margin-bottom: 3vh;
+  }
+
+  .objective-card h5{
+    text-align: center;
   }
 
   .team-body {
