@@ -216,7 +216,7 @@ body {
 .landing-illustration {
   height: 20vh;
   scale: 1.8;
-  translate: 0 5vh;
+  translate: -3.8vw 5vh;
   justify-self: flex-end;
 }
 
@@ -245,7 +245,7 @@ body {
 
 .head-branding-part {
   position: absolute;
-  transform: translateY(-3vh);
+  transform: translateY(-2vh);
   width: 44vw;
 }
 
