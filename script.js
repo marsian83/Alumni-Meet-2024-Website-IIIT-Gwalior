@@ -38,7 +38,6 @@ function triggerOnScroll(scrollDistance, callback) {
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       triggerOnScroll(vh(15), () => {
         entry.target.classList.add("anim-show");
@@ -70,6 +69,42 @@ setInterval(() => {
   e.classList.add("slideshow-anim");
   setTimeout(() => {
     e.src = iiitmSlideshow[iiitmSlideshowSlide++ % iiitmSlideshow.length];
+    setTimeout(() => {
+      e.classList.remove("slideshow-anim");
+    }, 400);
+  }, 400);
+}, 6000);
+
+const eventSlideShow = [
+  ["https://media.timeout.com/images/70774/image.jpg", "Scala Night"],
+  [
+    "https://images.moneycontrol.com/static-mcnews/2017/12/football.jpg?impolicy=website&width=770&height=431",
+    "Sports Afternoon",
+  ],
+  [
+    "https://www.incimages.com/uploaded_files/image/1920x1080/getty_501062623_20001333200092801_80323.jpg",
+    "Interaction Session",
+  ],
+  [
+    "https://raah.org.in/wp-content/uploads/2019/10/celebration-crowd-event-2283996-1024x502.jpg",
+    "Cultural Event",
+  ],
+];
+
+let eventSlideShowSlide = 0;
+
+setInterval(() => {
+  const e = document.querySelector(".event-images");
+  e.classList.add("slideshow-anim");
+  setTimeout(() => {
+    e.style.backgroundImage = `url(${
+      eventSlideShow[(eventSlideShowSlide + 1) % eventSlideShow.length][0]
+    })
+    `;
+    document.querySelector(".event-images-caption").textContent = `${
+      eventSlideShow[(eventSlideShowSlide + 1) % eventSlideShow.length][1]
+    }`;
+    eventSlideShowSlide += 1;
     setTimeout(() => {
       e.classList.remove("slideshow-anim");
     }, 400);
