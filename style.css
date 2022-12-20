@@ -1245,6 +1245,7 @@ footer {
   .timeline {
     padding-top: 6vh;
     box-shadow: none;
+    overflow: hidden;
   }
 
   .timeline-hint {
