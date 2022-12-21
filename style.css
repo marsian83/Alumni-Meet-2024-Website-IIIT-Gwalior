@@ -864,7 +864,7 @@ body {
   transition-delay: 400ms;
 }
 .team-member-card:nth-child(5) img {
-  transition-delay: 500ms;
+  transition-delay: 1000ms;
 }
 .team-member-card:nth-child(6) img {
   transition-delay: 600ms;
