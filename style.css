@@ -213,6 +213,12 @@ body {
   transition: opacity 200ms ease, transform 100ms;
 }
 
+.foundation-day-poster{
+  width: 64%;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 8px #0a0a0a73;
+}
+
 .landing-illustration {
   height: 20vh;
   scale: 1.8;
