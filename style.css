@@ -213,6 +213,15 @@ body {
   transition: opacity 200ms ease, transform 100ms;
 }
 
+.head-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: center;
+}
+
 .foundation-day-poster{
   width: 64%;
   border-radius: 1rem;
