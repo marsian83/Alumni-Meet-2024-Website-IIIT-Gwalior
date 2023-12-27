@@ -1190,10 +1190,15 @@ footer {
     flex-direction: column;
   }
 
+  .head-right h2 {
+    display: none;
+  }
+
   .head-branding-part {
     transform: none;
-    width: 90vw;
+    width: 80vw;
     translate: 4vw 0;
+
   }
 
   #head-branding-part1 {
