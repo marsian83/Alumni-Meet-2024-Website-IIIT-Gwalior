@@ -82,7 +82,17 @@
             id="head-branding-part3"
           />
         </div>
-        <h2 style="color: var(--primary); position:absolute; bottom:  5rem; transform: translateX(-50%); left: 70%;">15th- 16th Jan' 2024</h2>
+        <h2
+          style="
+            color: var(--primary);
+            position: absolute;
+            bottom: 5rem;
+            transform: translateX(-50%);
+            left: 70%;
+          "
+        >
+          15th- 16th Jan' 2024
+        </h2>
       </div>
       <div class="mobile-only head-abviiitm">
         <div class="head-abviiitm-line1">
@@ -111,6 +121,49 @@
       </p>
     </div>
     <div class="body container">
+      <div
+        class="cta-buttons-top"
+        style="display: flex; margin-top: 3rem; gap: 5rem"
+      >
+        <button
+          style="
+            background: black;
+            color: white;
+            padding: 1rem 3rem 1rem 3rem;
+            display: flex;
+            justify-items: center;
+            gap: 6px;
+          "
+          onclick="
+          window.open('/assets/schedule.jpg')
+          "
+        >
+          View Schedule Brochure
+          <img
+            src="./assets/open.svg"
+            alt="open"
+            style="filter: brightness(0) invert(1)"
+          />
+        </button>
+        <button
+          style="
+            background: black;
+            color: white;
+            padding: 1rem 3rem 1rem 3rem;
+            display: flex;
+            justify-items: center;
+            gap: 6px;
+          "
+          onclick="window.open(`https://forms.gle/zotc8pcSUKG3cYCL9`)"
+        >
+          Book Accomodation
+          <img
+            src="./assets/open.svg"
+            alt="open"
+            style="filter: brightness(0) invert(1)"
+          />
+        </button>
+      </div>
       <div class="container event-info mobile-only">
         <div class="event-info-hint">Event Gallery</div>
         <div class="event-images"></div>
@@ -200,8 +253,8 @@
           </div>
         </div>
       </div>
-      <div style="width:auto">
-        <img src="/assets/banner.jpg" style="width:100%;" />
+      <div style="width: auto">
+        <img src="/assets/banner.jpg" style="width: 100%" />
       </div>
       <div class="container about">
         <div class="about-hint">About</div>
@@ -352,7 +405,6 @@
           </div>
 
           <div style="display: flex; justify-content: center; gap: 26px">
-           
             <div class="team-member-card anim-hidden">
               <img
                 src="https://www.iiitm.ac.in/images/demo/teachers/1668597418_DSC_1271.JPG"
@@ -377,10 +429,8 @@
               <!-- <p>Co-Coordinator</p> -->
               <p>Faculty, IIITM Gwalior</p>
             </div>
-           
           </div>
           <div style="display: flex; justify-content: center; gap: 26px">
-           
             <div class="team-member-card anim-hidden">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eo_circle_brown_letter-a.svg/480px-Eo_circle_brown_letter-a.svg.png"
@@ -397,7 +447,6 @@
               <!-- <p>Co-Coordinator</p>
               <p>Faculty, IIITM Gwalior</p> -->
             </div>
-         
           </div>
         </div>
       </div>

@@ -141,6 +141,30 @@ body {
   background-color: var(--secondary);
 }
 
+
+.cta-buttons-top button {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  font-style: italic;
+  padding: 0vh 1vw;
+  text-decoration: none;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  transition: clip-path 500ms ease, transform 500ms ease-out,
+    padding 400ms linear, background-color 400ms ease-out;
+}
+
+.cta-buttons-top button :hover {
+  clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+  transform: scale(1.1);
+  background-color: var(--secondary);
+}
+
+.cta-buttons-top button img:hover {
+background-color: transparent;
+}
+
 .head {
   display: flex;
   flex-direction: row;
@@ -222,7 +246,7 @@ body {
   align-items: center;
 }
 
-.foundation-day-poster{
+.foundation-day-poster {
   width: 64%;
   border-radius: 1rem;
   box-shadow: 0px 0px 8px #0a0a0a73;
@@ -509,45 +533,55 @@ body {
   margin-bottom: 1vh;
 }
 
-.time-event:nth-of-type(2) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/auditorium.jpg") no-repeat center center fixed;
+.time-event:nth-of-type(2) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/auditorium.jpg") no-repeat center center fixed;
   background-size: 150%;
 }
-.time-event:nth-of-type(3) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/aurora.jpg") no-repeat center center fixed;
+.time-event:nth-of-type(3) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/aurora.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
-.time-event:nth-of-type(4) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/socialising.jpg") no-repeat center center fixed;
+.time-event:nth-of-type(4) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/socialising.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
-.time-event:nth-of-type(5) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/singing.jpg") no-repeat center center fixed;
+.time-event:nth-of-type(5) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/singing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-.time-event:nth-of-type(6) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/ethnic_day.jpg") no-repeat center center fixed;
+.time-event:nth-of-type(6) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/ethnic_day.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
-.time-event:nth-of-type(7) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/djnight.jpg") no-repeat center center fixed;
+.time-event:nth-of-type(7) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/djnight.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
-.time-event:nth-of-type(8) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/sports.jpg") no-repeat center center fixed;
+.time-event:nth-of-type(8) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/sports.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
 
-.time-event:nth-of-type(10) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/closingCeremony.jpg") no-repeat center center fixed;
+.time-event:nth-of-type(10) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/closingCeremony.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
-.time-event:nth-of-type(9) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/campus.jpg") no-repeat center center fixed;
+.time-event:nth-of-type(9) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/campus.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
-.time-event:nth-of-type(11) .time-event-card{
-  background: linear-gradient(to bottom, transparent, transparent, black), url("./assets/foundation.png") no-repeat fixed;
+.time-event:nth-of-type(11) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/foundation.png") no-repeat fixed;
   background-size: 100%;
 }
 
@@ -829,12 +863,12 @@ body {
   padding: 0vh 5vw;
 }
 
-.widescreen-only.placeholder{
+.widescreen-only.placeholder {
   width: 20vw;
   height: 1px;
 }
 
-.widescreen-only.holderplace{
+.widescreen-only.holderplace {
   width: 15vw;
   height: 1px;
 }
@@ -892,7 +926,7 @@ body {
   transition-delay: 700ms;
 }
 
-.director-team-member img{
+.director-team-member img {
   transform: scale(1.1);
   border-color: goldenrod;
 }
@@ -1152,7 +1186,7 @@ footer {
     align-items: center;
     background-color: none;
   }
-  
+
   .head-abviiitm-line1 {
     display: flex;
     flex-direction: row;
@@ -1160,7 +1194,7 @@ footer {
     background-color: none;
     margin-bottom: 0;
   }
-  
+
   .head-abviiitm img {
     height: 5rem;
     background-color: none;
@@ -1198,7 +1232,6 @@ footer {
     transform: none;
     width: 80vw;
     translate: 4vw 0;
-
   }
 
   #head-branding-part1 {
@@ -1349,7 +1382,7 @@ footer {
     margin-bottom: 3vh;
   }
 
-  .objective-card h5{
+  .objective-card h5 {
     text-align: center;
   }
 
