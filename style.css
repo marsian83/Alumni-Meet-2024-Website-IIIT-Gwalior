@@ -1156,7 +1156,7 @@ footer {
 
 @media only screen and (min-width: 720px) {
   .mobile-only {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1410,4 +1410,27 @@ footer {
   .contact-us-body iframe {
     display: none;
   }
+
+  .cta-buttons-top {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+.cta-buttons-top button {
+  font-size: 0.8rem;
+  font-weight: 400;
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  font-style: italic;
+  padding: 0vh 1vw;
+  text-decoration: none;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  transition: clip-path 500ms ease, transform 500ms ease-out,
+    padding 400ms linear, background-color 400ms ease-out;
+}
+
+.cta-buttons-top button img {
+  display: none;
+}
+
 }
