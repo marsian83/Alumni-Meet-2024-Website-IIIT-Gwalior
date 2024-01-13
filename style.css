@@ -141,7 +141,6 @@ body {
   background-color: var(--secondary);
 }
 
-
 .cta-buttons-top button {
   font-size: 1.3rem;
   font-weight: 500;
@@ -162,7 +161,7 @@ body {
 }
 
 .cta-buttons-top button img:hover {
-background-color: transparent;
+  background-color: transparent;
 }
 
 .head {
@@ -1149,6 +1148,20 @@ footer {
   text-shadow: 0px 0px 8px #000000ff;
 }
 
+.trophy-container {
+  background-color: aliceblue;
+  width: 50%;
+  padding: 2vw 3vw;
+  border-radius: 2vw;
+  font-size: larger;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 12vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .register-modal p:hover {
   scale: 1.05;
   text-decoration: none;
@@ -1360,6 +1373,28 @@ footer {
     justify-self: none;
     padding-right: 1.5rem;
   }
+  .head-scroll-down-hint {
+    display: none;
+  }
+  #head-scroll-down1 {
+    display: none;
+  }
+  #head-scroll-down2 {
+    display: none;
+  }
+  #head-scroll-down3 {
+    display: none;
+  }
+  .head-scroll-down {
+    display: none;
+  }
+
+  .trophy-container {
+    font-size: medium;
+    width: 80vw;
+    margin-top: 5vh;
+  }
+
 
   .about-body {
     flex-direction: column-reverse;
@@ -1390,6 +1425,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+    padding: 0;
   }
 
   .team-member-card {
@@ -1415,22 +1451,21 @@ footer {
     gap: 1rem;
     flex-direction: column;
   }
-  
-.cta-buttons-top button {
-  font-size: 0.8rem;
-  font-weight: 400;
-  background-color: var(--primary);
-  color: var(--text-secondary);
-  font-style: italic;
-  padding: 0vh 1vw;
-  text-decoration: none;
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  transition: clip-path 500ms ease, transform 500ms ease-out,
-    padding 400ms linear, background-color 400ms ease-out;
-}
 
-.cta-buttons-top button img {
-  display: none;
-}
+  .cta-buttons-top button {
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: var(--primary);
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 0vh 1vw;
+    text-decoration: none;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    transition: clip-path 500ms ease, transform 500ms ease-out,
+      padding 400ms linear, background-color 400ms ease-out;
+  }
 
+  .cta-buttons-top button img {
+    display: none;
+  }
 }
