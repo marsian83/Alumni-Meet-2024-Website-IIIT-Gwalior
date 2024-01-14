@@ -1,125 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alumni Meet '24</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- FontAwesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./favicon.ico" />
-  </head>
 
-  <body>
-    <div class="navbar container widescreen-only">
-      <div class="container navbar-branding" onclick="scrollToClass('head')">
-        Alumni Meet '24
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Meet '24</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" />
+</head>
+
+<body>
+  <div class="navbar container widescreen-only">
+    <div class="container navbar-branding" onclick="scrollToClass('head')">
+      Alumni Meet '24
+    </div>
+    <div class="navbar-items container">
+      <div class="navbar-item" onclick="scrollToClass('head')">
+        <i class="fa-solid fa-house"></i>Home
       </div>
-      <div class="navbar-items container">
-        <div class="navbar-item" onclick="scrollToClass('head')">
-          <i class="fa-solid fa-house"></i>Home
-        </div>
-        <div class="navbar-item" onclick="scrollToClass('timeline')">
-          <i class="fa-solid fa-timeline"></i>
-          Timeline
-        </div>
-        <div class="navbar-item" onclick="scrollToClass('about')">
-          <i class="fa-solid fa-circle-info"></i>About
-        </div>
-        <div class="navbar-item" onclick="scrollToClass('team')">
-          <i class="fa-solid fa-people-group"></i>Our Team
-        </div>
-        <div class="navbar-item" onclick="scrollToClass('contact-us')">
-          <i class="fa-regular fa-envelope"></i>
-          Contact us
-        </div>
-        <div
-          class="navbar-item"
-          id="navbar-item-register"
-          onclick="showFormModal()"
-        >
-          Register
-        </div>
+      <div class="navbar-item" onclick="scrollToClass('timeline')">
+        <i class="fa-solid fa-timeline"></i>
+        Timeline
+      </div>
+      <div class="navbar-item" onclick="scrollToClass('about')">
+        <i class="fa-solid fa-circle-info"></i>About
+      </div>
+      <div class="navbar-item" onclick="scrollToClass('team')">
+        <i class="fa-solid fa-people-group"></i>Our Team
+      </div>
+      <div class="navbar-item" onclick="scrollToClass('contact-us')">
+        <i class="fa-regular fa-envelope"></i>
+        Contact us
+      </div>
+      <div class="navbar-item" id="navbar-item-register" onclick="showFormModal()">
+        Register
       </div>
     </div>
-    <div class="head container">
-      <div class="head-top-space mobile-only"></div>
-      <div class="head-left container">
-        <img src="./assets/foundation-day.png" class="foundation-day-poster" />
-        <h1 style="color: var(--secondary)">26<sup>th</sup> Foundation Day</h1>
-        <h2 style="color: var(--primary)">17<sup>th</sup> Jan' 2024</h2>
-        <img
-          src="./assets/landing-illustration-geometry.png"
-          alt="event-summary"
-          class="landing-illustration"
-        />
+  </div>
+  <div class="head container">
+    <div class="head-top-space mobile-only"></div>
+    <div class="head-left container">
+      <img src="./assets/foundation-day.png" class="foundation-day-poster" />
+      <h1 style="color: var(--secondary)">26<sup>th</sup> Foundation Day</h1>
+      <h2 style="color: var(--primary)">17<sup>th</sup> Jan' 2024</h2>
+      <img src="./assets/landing-illustration-geometry.png" alt="event-summary" class="landing-illustration" />
+    </div>
+    <div class="head-right container">
+      <div class="head-branding container">
+        <img src="./assets/branding-handloop.png" alt="brand-hands" class="head-branding-part"
+          id="head-branding-part1" />
+        <img src="./assets/branding-decor-1.png" alt="brand-decor1" class="head-branding-part"
+          id="head-branding-part2" />
+        <img src="./assets/branding-decor-2.png" alt="brand-decor2" class="head-branding-part"
+          id="head-branding-part3" />
       </div>
-      <div class="head-right container">
-        <div class="head-branding container">
-          <img
-            src="./assets/branding-handloop.png"
-            alt="brand-hands"
-            class="head-branding-part"
-            id="head-branding-part1"
-          />
-          <img
-            src="./assets/branding-decor-1.png"
-            alt="brand-decor1"
-            class="head-branding-part"
-            id="head-branding-part2"
-          />
-          <img
-            src="./assets/branding-decor-2.png"
-            alt="brand-decor2"
-            class="head-branding-part"
-            id="head-branding-part3"
-          />
-        </div>
-        <h2
-          style="
+      <h2 style="
             color: var(--primary);
             position: absolute;
             bottom: 5rem;
             transform: translateX(-50%);
             left: 70%;
-          "
-        >
-          15<sup>th</sup>- 16<sup>th</sup> Jan' 2024
-        </h2>
+          ">
+        15<sup>th</sup>- 16<sup>th</sup> Jan' 2024
+      </h2>
+    </div>
+    <div class="mobile-only head-abviiitm">
+      <div class="head-abviiitm-line1">
+        <img src="./assets/iiitm-logo.png" alt="" />
+        <h3 class="mobile-only head-abviiitm-line1">ABV - IIITM Gwalior</h3>
       </div>
-      <div class="mobile-only head-abviiitm">
-        <div class="head-abviiitm-line1">
-          <img src="./assets/iiitm-logo.png" alt="" />
-          <h3 class="mobile-only head-abviiitm-line1">ABV - IIITM Gwalior</h3>
-        </div>
-        <h3 class="mobile-only head-abviiitm-line2">Alumni Meet 2024</h3>
-      </div>
-      <i
-        class="fa fa-chevron-down head-scroll-down"
-        id="head-scroll-down1"
-        aria-hidden="true"
-      ></i>
-      <i
-        class="fa fa-chevron-down head-scroll-down"
-        id="head-scroll-down2"
-        aria-hidden="true"
-      ></i>
-      <i
-        class="fa fa-chevron-down head-scroll-down"
-        id="head-scroll-down3"
-        aria-hidden="true"
-      ></i>
-      <p class="head-scroll-down-hint" onclick="scrollToClass('timeline')">
-        SCROLL DOWN
-      </p>
+      <h3 class="mobile-only head-abviiitm-line2">Alumni Meet 2024</h3>
     </div>
     <i class="fa fa-chevron-down head-scroll-down" id="head-scroll-down1" aria-hidden="true"></i>
     <i class="fa fa-chevron-down head-scroll-down" id="head-scroll-down2" aria-hidden="true"></i>
@@ -128,7 +84,16 @@
       SCROLL DOWN
     </p>
   </div>
-  <img src="./assets/award-banner.jpg" alt="distinguished alumni award" style="width: 99%; margin-top: 12vh; border: 1px solid black;" onclick="window.open('https://forms.gle/wYSdFze4ZYUrbVh17')">
+  <i class="fa fa-chevron-down head-scroll-down" id="head-scroll-down1" aria-hidden="true"></i>
+  <i class="fa fa-chevron-down head-scroll-down" id="head-scroll-down2" aria-hidden="true"></i>
+  <i class="fa fa-chevron-down head-scroll-down" id="head-scroll-down3" aria-hidden="true"></i>
+  <p class="head-scroll-down-hint" onclick="scrollToClass('timeline')">
+    SCROLL DOWN
+  </p>
+  </div>
+  <img src="./assets/award-banner.jpg" alt="distinguished alumni award"
+    style="width: 99%; margin-top: 12vh; border: 1px solid black;"
+    onclick="window.open('https://forms.gle/wYSdFze4ZYUrbVh17')">
   <!-- <div class="body container"
     style="display: flex; justify-content: center; align-items: center; background-image: url('https://img.freepik.com/premium-photo/trophy-banner-winning-announcement-tournament-generative-ai_779468-2893.jpg'); width: 100%; height: 90vh; background-repeat: no-repeat; background-size: cover; background-position: center;">
     <div class="trophy-container" >
@@ -167,20 +132,13 @@
             justify-items: center;
             gap: 6px;
             cursor: pointer;
-          "
-          onclick="
+          " onclick="
           window.open('/assets/schedule.pdf')
-          "
-        >
-          View Schedule Brochure
-          <img
-            src="./assets/open.svg"
-            alt="open"
-            style="filter: brightness(0) invert(1)"
-          />
-        </button>
-        <button
-          style="
+          ">
+        View Schedule Brochure
+        <img src="./assets/open.svg" alt="open" style="filter: brightness(0) invert(1)" />
+      </button>
+      <button style="
             background: black;
             color: white;
             padding: 1rem 3rem 1rem 3rem;
@@ -205,89 +163,194 @@
       <div class="event-images"></div>
       <div class="event-images-caption">Cultural Event</div>
     </div>
+
+
     <div class="container timeline">
       <p class="timeline-hint">Timeline of Events</p>
       <div class="timeline-line"></div>
+
       <div class="time-event time-event-left anim-hidden container">
         <div class="time-event-bullet"></div>
         <div class="time-event-time">Day 1 - (10:00 - 11:30)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>Inaugural Session</p>
+          <p>Sports Competitions</p>
         </div>
       </div>
+
       <div class="time-event time-event-right anim-hidden container">
         <div class="time-event-bullet"></div>
-        <div class="time-event-time">Day 1 - (10:00 - 11:30)</div>
+        <div class="time-event-time">Day 1 - (12:00 - 13:00)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>BeatHopper & Manchatantra performances</p>
+          <p>Treasure Hunt</p>
         </div>
       </div>
+
       <div class="time-event time-event-left anim-hidden container">
         <div class="time-event-bullet"></div>
-        <div class="time-event-time">Day 1 - (12:00 - 13:30)</div>
+        <div class="time-event-time">Day 1 - (14:00 - 15:30)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>Rewind it- Socialising Event</p>
+          <p>Alumni Spot Light Presentation</p>
         </div>
       </div>
+
       <div class="time-event time-event-right anim-hidden container">
         <div class="time-event-bullet"></div>
-        <div class="time-event-time">Day 1 - (16:00 - 18:00)</div>
+        <div class="time-event-time">Day 1 - (15:30 - 16:30)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>Ethnic Evening (Cultural Performances)</p>
+          <p>Student Idea Presentation</p>
         </div>
       </div>
+
       <div class="time-event time-event-left anim-hidden container">
         <div class="time-event-bullet"></div>
-        <div class="time-event-time">Day 1 - (18:00 - 18:30)</div>
+        <div class="time-event-time">Day 1 - (15:30 - 17:00)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>Photoshoots</p>
+          <p>Rewind It (Socializing Event)</p>
         </div>
       </div>
+
       <div class="time-event time-event-right anim-hidden container">
         <div class="time-event-bullet"></div>
-        <div class="time-event-time">Day 1 - 21:00</div>
+        <div class="time-event-time">Day 1 - (17.30 to 18.00)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>DJ Night- Bonefire - OpenMic</p>
+          <p>Ethnic eve (Batch photoshoot)</p>
         </div>
       </div>
+
       <div class="time-event time-event-left anim-hidden container">
         <div class="time-event-bullet"></div>
-        <div class="time-event-time">Day 2 - (9:00-12:00)</div>
+        <div class="time-event-time">Day 1 - (18.30 to 20.00)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>Mini Urja</p>
+          <p>Cultural Performance</p>
         </div>
       </div>
+
       <div class="time-event time-event-right anim-hidden container">
         <div class="time-event-bullet"></div>
-        <div class="time-event-time">Day 2 - (14:00 - 15:30)</div>
+        <div class="time-event-time">Day 1 - (20.30 onwards)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>Campus exploration</p>
+          <p>Bonfire</p>
         </div>
       </div>
+      <!-- day 2 -->
+      <!--10 th  -->
       <div class="time-event time-event-left anim-hidden container">
         <div class="time-event-bullet"></div>
-        <div class="time-event-time">Day 2 - (16:00 - 17:30)</div>
+        <div class="time-event-time">Day 2 - (9.30 to 10.00)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>Closing Ceremony & Interaction with students</p>
+          <p>Plantation</p>
         </div>
       </div>
+
       <div class="time-event time-event-right anim-hidden container">
         <div class="time-event-bullet"></div>
-        <div class="time-event-time">Day 3 - (10:00 - 12:00)</div>
+        <div class="time-event-time">Day 2 - (10.30 to 11.30)</div>
         <div class="time-event-joiner"></div>
         <div class="time-event-card" id="time-event-card1">
-          <p>Foundation Day</p>
+          <p>Inauguration of Alumni Meet</p>
         </div>
       </div>
+
+      <div class="time-event time-event-left anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day 2 - (14:00 to 15:00)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>Bootcamp by Alumni</p>
+        </div>
+      </div>
+
+      <div class="time-event time-event-right anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day 2 - (15:00 to 15.45)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>Personality Development Workshop</p>
+        </div>
+      </div>
+
+      <div class="time-event time-event-left anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day 2 - (15:50 to 16.30)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>Alumni interaction with Director, Deans, Officials</p>
+        </div>
+      </div>
+
+      <div class="time-event time-event-right anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day 2 - (16.30 to 17.15)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>Anubhav Vidayi (Valedictory ceremony & Award Distribution)</p>
+        </div>
+      </div>
+
+      <div class="time-event time-event-left anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day 2 - (18.00 to 20.30)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>Saath-ae-Saaz (Gazal night)</p>
+        </div>
+      </div>
+      <!-- day - 3  -->
+      <!-- 17 th -->
+      <div class="time-event time-event-right anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day 3 - (10.00 to 12.00)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>Sports Competition</p>
+        </div>
+      </div>
+
+      <div class="time-event time-event-left anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day 3 - (12.00 to 1.00)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>Marathon</p>
+        </div>
+      </div>
+
+      <div class="time-event time-event-right anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day - (14.00 to 16.00)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>Games and activities & Award Distribution Ceremony</p>
+        </div>
+      </div>
+
+      <div class="time-event time-event-left anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day 3 - (16.30 to 18.30)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>26th Foundation Day Celebration of ABV-IIITM</p>
+        </div>
+      </div>
+
+      <div class="time-event time-event-right anim-hidden container">
+        <div class="time-event-bullet"></div>
+        <div class="time-event-time">Day 3 - (18.30 to 20.30)</div>
+        <div class="time-event-joiner"></div>
+        <div class="time-event-card" id="time-event-card1">
+          <p>Surili Shaam (Musical event)</p>
+        </div>
+      </div>
+
     </div>
     <div style="width: auto">
       <img src="/assets/banner.jpg" style="width: 100%" />
@@ -392,16 +455,14 @@
           </div>
         </div>
 
-          <div style="display: flex; justify-content: center; gap: 26px">
-            <div class="team-member-card anim-hidden">
-              <img
-                src="https://www.iiitm.ac.in/images/demo/teachers/1669281255_dr%20manoj%20Dash.jpg"
-              />
-              <h5>Dr Manoj Dash</h5>
-              <!-- <p>Coordinator</p> -->
-              <p>Faculty, IIITM Gwalior</p>
-            </div>
-            <!-- <div class="team-member-card anim-hidden">
+        <div style="display: flex; justify-content: center; gap: 26px">
+          <div class="team-member-card anim-hidden">
+            <img src="https://www.iiitm.ac.in/images/demo/teachers/1669281255_dr%20manoj%20Dash.jpg" />
+            <h5>Dr Manoj Dash</h5>
+            <!-- <p>Coordinator</p> -->
+            <p>Faculty, IIITM Gwalior</p>
+          </div>
+          <!-- <div class="team-member-card anim-hidden">
               <img
                 src="https://www.iiitm.ac.in/images/demo/teachers/1654674957_VS.jpg"
               />
@@ -409,165 +470,133 @@
               <p>Coordinator</p>
               <p>Faculty, IIITM Gwalior</p>
             </div> -->
-            <div class="team-member-card anim-hidden">
-              <img
-                src="https://www.iiitm.ac.in/images/demo/teachers/1533546077_drsaumya.jpg"
-              />
-              <h5>Dr Saumya Bhaduria</h5>
-              <!-- <p>Co-Coordinator</p> -->
-              <p>Faculty, IIITM Gwalior</p>
-            </div>
-            <div class="team-member-card anim-hidden">
-              <img
-                src="https://www.iiitm.ac.in/images/demo/teachers/1601567414_IMG_20201001_171900.jpg"
-              />
-              <h5>Dr Santosh Singh Rathore</h5>
-              <!-- <p>Co-Coordinator</p> -->
-              <p>Faculty, IIITM Gwalior</p>
-            </div>
+          <div class="team-member-card anim-hidden">
+            <img src="https://www.iiitm.ac.in/images/demo/teachers/1533546077_drsaumya.jpg" />
+            <h5>Dr Saumya Bhaduria</h5>
+            <!-- <p>Co-Coordinator</p> -->
+            <p>Faculty, IIITM Gwalior</p>
           </div>
+          <div class="team-member-card anim-hidden">
+            <img src="https://www.iiitm.ac.in/images/demo/teachers/1601567414_IMG_20201001_171900.jpg" />
+            <h5>Dr Santosh Singh Rathore</h5>
+            <!-- <p>Co-Coordinator</p> -->
+            <p>Faculty, IIITM Gwalior</p>
+          </div>
+        </div>
 
-          <div style="display: flex; justify-content: center; gap: 26px">
-            <div class="team-member-card anim-hidden">
-              <img
-                src="https://www.iiitm.ac.in/images/demo/teachers/1668597418_DSC_1271.JPG"
-              />
-              <h5>Dr Pinku Ranjan</h5>
-              <!-- <p>Co-Coordinator</p> -->
-              <p>Faculty, IIITM Gwalior</p>
-            </div>
-            <div class="team-member-card anim-hidden">
-              <img
-                src="https://www.iiitm.ac.in/images/demo/teachers/1677494746_kapil_photo.jpg"
-              />
-              <h5>Dr Kapil Kant</h5>
-              <!-- <p>Co-Coordinator</p> -->
-              <p>Faculty, IIITM Gwalior</p>
-            </div>
-            <div class="team-member-card anim-hidden">
-              <img
-                src="https://www.iiitm.ac.in/images/demo/teachers/1677492702_PIC_Mahendra%20K.%20Shukla.jpg"
-              />
-              <h5>Dr Mahendra Kumar Shukla</h5>
-              <!-- <p>Co-Coordinator</p> -->
-              <p>Faculty, IIITM Gwalior</p>
-            </div>
+        <div style="display: flex; justify-content: center; gap: 26px">
+          <div class="team-member-card anim-hidden">
+            <img src="https://www.iiitm.ac.in/images/demo/teachers/1668597418_DSC_1271.JPG" />
+            <h5>Dr Pinku Ranjan</h5>
+            <!-- <p>Co-Coordinator</p> -->
+            <p>Faculty, IIITM Gwalior</p>
           </div>
-          <div style="display: flex; justify-content: center; gap: 26px">
-            <div class="team-member-card anim-hidden">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eo_circle_brown_letter-a.svg/480px-Eo_circle_brown_letter-a.svg.png"
-              />
-              <h5>Mr. Anil Garg</h5>
-              <!-- <p>Co-Coordinator</p> -->
-              <!-- <p>Faculty, IIITM Gwalior</p> -->
-            </div>
-            <div class="team-member-card anim-hidden">
-              <img
-                src="data:image/png;base64,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"
-              />
-              <h5>Mr Kaushlendra Singh Rathore</h5>
-              <!-- <p>Co-Coordinator</p>
+          <div class="team-member-card anim-hidden">
+            <img src="https://www.iiitm.ac.in/images/demo/teachers/1677494746_kapil_photo.jpg" />
+            <h5>Dr Kapil Kant</h5>
+            <!-- <p>Co-Coordinator</p> -->
+            <p>Faculty, IIITM Gwalior</p>
+          </div>
+          <div class="team-member-card anim-hidden">
+            <img src="https://www.iiitm.ac.in/images/demo/teachers/1677492702_PIC_Mahendra%20K.%20Shukla.jpg" />
+            <h5>Dr Mahendra Kumar Shukla</h5>
+            <!-- <p>Co-Coordinator</p> -->
+            <p>Faculty, IIITM Gwalior</p>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 26px">
+          <div class="team-member-card anim-hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eo_circle_brown_letter-a.svg/480px-Eo_circle_brown_letter-a.svg.png" />
+            <h5>Mr. Anil Garg</h5>
+            <!-- <p>Co-Coordinator</p> -->
+            <!-- <p>Faculty, IIITM Gwalior</p> -->
+          </div>
+          <div class="team-member-card anim-hidden">
+            <img
+              src="data:image/png;base64,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" />
+            <h5>Mr Kaushlendra Singh Rathore</h5>
+            <!-- <p>Co-Coordinator</p>
               <p>Faculty, IIITM Gwalior</p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="contact-us">
-        <div class="contact-us-hint">Let's Get in Touch</div>
-        <div class="contact-us-body">
-          <div class="contact-us-left">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7156.708765090627!2d78.16822557600752!3d26.250159506076507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c6e5d32a4d53%3A0xf834069adc0c9b89!2sAtal%20Bihari%20Vajpayee%20Indian%20Institute%20of%20Information%20Technology%20and%20Management%20Gwalior!5e0!3m2!1sen!2sjp!4v1671403702918!5m2!1sen!2sjp"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="contact-us-right">
-            <p>
-              Any questions? Feel free to reach out to us. Drop an email at any
-              of the following mails or call us at the given numbers.
-            </p>
-            <h6>Alumni Net and Organizers</h6>
-            <p>Contact us via any of the methods below</p>
-            <h6>Email: alumninet@iiitm.ac.in | Phone: +91 751 2449823</h6>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container footer-top">
-        <div class="footer-section">
-          <h5>Contact us</h5>
-          <p>ABV-IIITM</p>
-          <p>Gwalior, Madhya Pradesh</p>
-          <p>Phone: +91 +91 751 2449823</p>
-          <p>Email: alumninet@iiitm.ac.in</p>
-        </div>
-        <div class="footer-section">
-          <h5>Quick links</h5>
-          <ul>
-            <li onclick="scrollToClass('home')">Home</li>
-            <li onclick="scrollToClass('timeline')">Timeline</li>
-            <li onclick="scrollToClass('about')">About</li>
-            <li onclick="scrollToClass('team')">Team</li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h5>Follow us</h5>
-          <div class="footer-social-icons">
-            <a onclick="window.open('https:\/\/www.facebook.com/iiitm/')"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a onclick="window.open('https:\/\/www.twitter.com/iiitm')"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              onclick="window.open('https:\/\/www.instagram.com/iiitmgwaliorofficial')"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              onclick="window.open('https:\/\/www.linkedin.com/in/spandan-barve-b84172191/')"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="container footer-bottom">
-        <p>Copyright &copy; 2024 ABV-IIITM Gwalior. All rights reserved.</p>
-      </div>
-    </footer>
-    <div class="modal hide" onclick="closeFormModal()">
-      <div class="modal-close-btn">X</div>
-      <div class="register-modal" onclick="closeFormModal()">
-        <div class="form-holder">
+    <div class="contact-us">
+      <div class="contact-us-hint">Let's Get in Touch</div>
+      <div class="contact-us-body">
+        <div class="contact-us-left">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeVkBW3DWVHb06999nDShuTh3gD1bKK2FqJnNQnQVljXU-0Lg/viewform?usp=sf_link"
-            width="640"
-            height="720"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            >Loading…</iframe
-          >
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7156.708765090627!2d78.16822557600752!3d26.250159506076507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c6e5d32a4d53%3A0xf834069adc0c9b89!2sAtal%20Bihari%20Vajpayee%20Indian%20Institute%20of%20Information%20Technology%20and%20Management%20Gwalior!5e0!3m2!1sen!2sjp!4v1671403702918!5m2!1sen!2sjp"
+            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <p
-          onclick="let newwindow=window.open('https:\/\/docs.google.com/forms/d/e/1FAIpQLSeVkBW3DWVHb06999nDShuTh3gD1bKK2FqJnNQnQVljXU-0Lg/viewform?usp=sf_link','_new','height=720,width=640');
-          if (window.focus) {newwindow.focus()}"
-        >
-          Click here if the above form is not working for you
-        </p>
+        <div class="contact-us-right">
+          <p>
+            Any questions? Feel free to reach out to us. Drop an email at any
+            of the following mails or call us at the given numbers.
+          </p>
+          <h6>Alumni Net and Organizers</h6>
+          <p>Contact us via any of the methods below</p>
+          <h6>Email: alumninet@iiitm.ac.in | Phone: +91 751 2449823</h6>
+        </div>
       </div>
     </div>
-    <!-- Background Music -->
-    <!-- <audio autoplay loop hidden>
+  </div>
+  <footer>
+    <div class="container footer-top">
+      <div class="footer-section">
+        <h5>Contact us</h5>
+        <p>ABV-IIITM</p>
+        <p>Gwalior, Madhya Pradesh</p>
+        <p>Phone: +91 +91 751 2449823</p>
+        <p>Email: alumninet@iiitm.ac.in</p>
+      </div>
+      <div class="footer-section">
+        <h5>Quick links</h5>
+        <ul>
+          <li onclick="scrollToClass('home')">Home</li>
+          <li onclick="scrollToClass('timeline')">Timeline</li>
+          <li onclick="scrollToClass('about')">About</li>
+          <li onclick="scrollToClass('team')">Team</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5>Follow us</h5>
+        <div class="footer-social-icons">
+          <a onclick="window.open('https:\/\/www.facebook.com/iiitm/')"><i class="fab fa-facebook-f"></i></a>
+          <a onclick="window.open('https:\/\/www.twitter.com/iiitm')"><i class="fab fa-twitter"></i></a>
+          <a onclick="window.open('https:\/\/www.instagram.com/iiitmgwaliorofficial')"><i
+              class="fab fa-instagram"></i></a>
+          <a onclick="window.open('https:\/\/www.linkedin.com/in/spandan-barve-b84172191/')"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container footer-bottom">
+      <p>Copyright &copy; 2024 ABV-IIITM Gwalior. All rights reserved.</p>
+    </div>
+  </footer>
+  <div class="modal hide" onclick="closeFormModal()">
+    <div class="modal-close-btn">X</div>
+    <div class="register-modal" onclick="closeFormModal()">
+      <div class="form-holder">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeVkBW3DWVHb06999nDShuTh3gD1bKK2FqJnNQnQVljXU-0Lg/viewform?usp=sf_link"
+          width="640" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+      <p onclick="let newwindow=window.open('https:\/\/docs.google.com/forms/d/e/1FAIpQLSeVkBW3DWVHb06999nDShuTh3gD1bKK2FqJnNQnQVljXU-0Lg/viewform?usp=sf_link','_new','height=720,width=640');
+          if (window.focus) {newwindow.focus()}">
+        Click here if the above form is not working for you
+      </p>
+    </div>
+  </div>
+  <!-- Background Music -->
+  <!-- <audio autoplay loop hidden>
       <source src="./assets/bgm.mp3" type="audio/mpeg" />
     </audio> -->
-  </body>
-  <script src="./script.js"></script>
+</body>
+<script src="./script.js"></script>
+
 </html>

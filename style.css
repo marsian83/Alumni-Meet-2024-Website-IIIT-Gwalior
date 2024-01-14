@@ -66,9 +66,11 @@ body {
     padding-bottom: 4vh;
     margin-bottom: -2vh;
   }
+
   60% {
     background-color: var(--background);
   }
+
   100% {
     margin-bottom: 5px;
     padding-bottom: 0;
@@ -303,9 +305,11 @@ body {
   0% {
     transform: translateY(-3vh);
   }
+
   50% {
     transform: translateY(+3vh);
   }
+
   100% {
     transform: translateY(-3vh);
   }
@@ -325,11 +329,13 @@ body {
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
 }
+
 @keyframes head-scroll-down1-animation {
   from {
     opacity: 0;
     transform: translateY(-100%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -341,10 +347,12 @@ body {
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
 }
+
 @keyframes head-scroll-down2-animation {
   from {
     transform: translateY(0%);
   }
+
   to {
     transform: translateY(100%);
   }
@@ -355,11 +363,13 @@ body {
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
 }
+
 @keyframes head-scroll-down3-animation {
   from {
     opacity: 1;
     transform: translateY(100%);
   }
+
   to {
     opacity: 0;
     transform: translateY(+200%);
@@ -409,7 +419,7 @@ body {
 
 .timeline-line {
   position: absolute;
-  height: 88%;
+  height: 94git %;
   transform: translateY(18vh);
   width: 0.25rem;
   background-color: var(--text-primary);
@@ -447,12 +457,15 @@ body {
   from {
     transform: scale(0);
   }
+
   70% {
     transform: scale(1.2);
   }
+
   85% {
     transform: scale(0.9);
   }
+
   to {
     transform: scale(1);
   }
@@ -478,6 +491,7 @@ body {
   left: 58%;
   text-align: right;
 }
+
 .time-event-right .time-event-time {
   right: 58%;
   text-align: left;
@@ -492,6 +506,7 @@ body {
 .time-event.anim-hidden .time-event-joiner {
   width: 0%;
 }
+
 .time-event.anim-show .time-event-joiner {
   width: 25%;
 }
@@ -534,55 +549,128 @@ body {
 
 .time-event:nth-of-type(2) .time-event-card {
   background: linear-gradient(to bottom, transparent, transparent, black),
-    url("./assets/auditorium.jpg") no-repeat center center fixed;
+    url("./assets/sports.jpg") no-repeat center center fixed;
   background-size: 150%;
 }
+
 .time-event:nth-of-type(3) .time-event-card {
   background: linear-gradient(to bottom, transparent, transparent, black),
-    url("./assets/aurora.jpg") no-repeat center center fixed;
+    url("./assets/treasureHunt.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
+
 .time-event:nth-of-type(4) .time-event-card {
   background: linear-gradient(to bottom, transparent, transparent, black),
     url("./assets/socialising.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
+
 .time-event:nth-of-type(5) .time-event-card {
   background: linear-gradient(to bottom, transparent, transparent, black),
-    url("./assets/singing.jpg") no-repeat center center fixed;
+    url("./assets/ideaPresentation.png") no-repeat center center fixed;
   background-size: cover;
 }
+
 .time-event:nth-of-type(6) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/social.jpg") no-repeat center center fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(7) .time-event-card {
   background: linear-gradient(to bottom, transparent, transparent, black),
     url("./assets/ethnic_day.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
-.time-event:nth-of-type(7) .time-event-card {
-  background: linear-gradient(to bottom, transparent, transparent, black),
-    url("./assets/djnight.jpg") no-repeat center center fixed;
-  background-size: 100%;
-}
+
 .time-event:nth-of-type(8) .time-event-card {
   background: linear-gradient(to bottom, transparent, transparent, black),
-    url("./assets/sports.jpg") no-repeat center center fixed;
+    url("./assets/cultural.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
+
 .time-event:nth-of-type(9) .time-event-card {
   background: linear-gradient(to bottom, transparent, transparent, black),
-    url("./assets/campus.jpg") no-repeat center center fixed;
+    url("./assets/bonfire.jpg") no-repeat center center fixed;
   background-size: 100%;
 }
+
 .time-event:nth-of-type(10) .time-event-card {
   background: linear-gradient(to bottom, transparent, transparent, black),
-    url("./assets/closingCeremony.jpg") no-repeat center center fixed;
+    url("./assets/plantation.png") no-repeat center center fixed;
   background-size: 100%;
 }
 
 .time-event:nth-of-type(11) .time-event-card {
   background: linear-gradient(to bottom, transparent, transparent, black),
-    url("./assets/foundation.png") no-repeat fixed;
+    url("./assets/inaugration.jpg") no-repeat fixed;
   background-size: 100%;
 }
+
+.time-event:nth-of-type(12) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/bootcamp.jpeg") no-repeat fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(13) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/workshop.jpg") no-repeat fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(14) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/director.jpeg") no-repeat fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(15) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/award.jpg") no-repeat fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(16) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/gazal.jpg") no-repeat fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(17) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/sportsCompetion.jpg") no-repeat fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(18) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/marthon.jpeg") no-repeat fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(19) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/award.jpg") no-repeat fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(20) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/abv-iiitm.jpg") no-repeat fixed;
+  background-size: 100%;
+}
+
+.time-event:nth-of-type(21) .time-event-card {
+  background: linear-gradient(to bottom, transparent, transparent, black),
+    url("./assets/music.jpg") no-repeat fixed;
+  background-size: 100%;
+}
+
+
+
+
+
 
 .time-event-left.anim-hidden .time-event-card {
   scale: 0 0.5;
@@ -592,6 +680,7 @@ body {
   flex-direction: row-reverse;
   text-align: right;
 }
+
 .time-event-right.anim-hidden .time-event-card {
   scale: 0 0.5;
   filter: blur(1);
@@ -625,10 +714,12 @@ body {
   font-size: 2rem;
   color: var(--secondary);
 }
+
 .time-event-left .time-event-card-icon {
   justify-self: flex-end;
   padding-left: 1.5rem;
 }
+
 .time-event-right .time-event-card-icon {
   justify-self: flex-start;
   padding-right: 1.5rem;
@@ -644,9 +735,11 @@ body {
   from {
     color: var(--secondary);
   }
+
   50% {
     color: var(--primary);
   }
+
   to {
     color: var(--secondary);
   }
@@ -746,9 +839,11 @@ body {
   from {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -808,12 +903,15 @@ body {
 .objective-card:nth-child(1) {
   transition-delay: 100ms;
 }
+
 .objective-card:nth-child(2) {
   transition-delay: 200ms;
 }
+
 .objective-card:nth-child(3) {
   transition-delay: 300ms;
 }
+
 .objective-card:nth-child(4) {
   transition-delay: 400ms;
 }
@@ -899,6 +997,7 @@ body {
 .team-member-card.anim-hidden img {
   scale: 0;
 }
+
 .team-member-card.anim-show img {
   scale: 1;
 }
@@ -906,21 +1005,27 @@ body {
 .team-member-card:nth-child(1) img {
   transition-delay: 100ms;
 }
+
 .team-member-card:nth-child(2) img {
   transition-delay: 200ms;
 }
+
 .team-member-card:nth-child(3) img {
   transition-delay: 300ms;
 }
+
 .team-member-card:nth-child(4) img {
   transition-delay: 400ms;
 }
+
 .team-member-card:nth-child(5) img {
   transition-delay: 1000ms;
 }
+
 .team-member-card:nth-child(6) img {
   transition-delay: 600ms;
 }
+
 .team-member-card:nth-child(7) img {
   transition-delay: 700ms;
 }
@@ -966,6 +1071,7 @@ body {
   width: 50%;
   overflow: hidden;
 }
+
 .contact-us-right {
   width: 50%;
   display: flex;
@@ -1125,11 +1231,9 @@ footer {
 }
 
 .register-modal iframe {
-  background-image: linear-gradient(
-    to bottom,
-    var(--primary),
-    var(--secondary)
-  );
+  background-image: linear-gradient(to bottom,
+      var(--primary),
+      var(--secondary));
   border-radius: 10px;
   overflow: hidden;
   height: 83vh;
@@ -1253,10 +1357,12 @@ footer {
     filter: drop-shadow(0px 0px 0.5rem #dedeff77);
     z-index: 3;
   }
+
   #head-branding-part2 {
     animation: none;
     opacity: 0.3;
   }
+
   #head-branding-part3 {
     animation: none;
     opacity: 0.5;
@@ -1340,10 +1446,12 @@ footer {
     top: 0;
     width: 100%;
   }
+
   .time-event-left .time-event-time {
     left: 0;
     text-align: left;
   }
+
   .time-event-right .time-event-time {
     right: 0;
     text-align: left;
@@ -1369,22 +1477,28 @@ footer {
     justify-self: none;
     padding-right: 1.5rem;
   }
+
   .time-event-right .time-event-card-icon {
     justify-self: none;
     padding-right: 1.5rem;
   }
+
   .head-scroll-down-hint {
     display: none;
   }
+
   #head-scroll-down1 {
     display: none;
   }
+
   #head-scroll-down2 {
     display: none;
   }
+
   #head-scroll-down3 {
     display: none;
   }
+
   .head-scroll-down {
     display: none;
   }
@@ -1403,6 +1517,7 @@ footer {
   .about-left {
     width: 100%;
   }
+
   .about-right {
     width: 100%;
   }
